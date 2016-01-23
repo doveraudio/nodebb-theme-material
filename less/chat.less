@@ -18,7 +18,7 @@
     			background-color: inherit;
     			vertical-align: inherit;
     			position: relative;
-			    left: -20px;
+			    left: -10px;
 			    top: 10px;
 			    font-size: 12px;
 
@@ -45,14 +45,12 @@
 	    border-radius: 50%;
 	    width: 32px;
 	    height: 32px;
-	    margin-right: 10px;
 	}
 
 	.user-icon {
 		width: 32px;
 	    height: 32px;
 	    line-height: 32px;
-		margin-right: 10px;
 	}
 
 
@@ -436,6 +434,30 @@
 
 .chat-modal {
 
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+		height: 100%;
+		top: 0 !important;
+		left: 0 !important;
+		
+		.modal-dialog {
+			height: 100%;
+			margin: 0px;
+		}
+		
+		.modal-content {
+			height: 100%;
+			border-radius: 0px;
+		}
+
+		.chat-footer {
+			padding-top: 15px;
+			border-top: 1px solid #ddd;
+		    margin-left: -15px;
+		    margin-right: -15px;
+		}
+	}
+
 	.lv-item {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -578,11 +600,12 @@
 	}
 
 	.modal-header {
-	    padding: 10px 20px;
+	    padding: 5px 20px;
 
 	    .close {
 	        margin-top: 10px;
-	        padding: 0px 5px;
+	        padding: 0px 10px;
+	        font-size: 18px;
 	    }
 	}
 }
